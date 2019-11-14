@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      // Save my eyes when writing code in bed late at night and refreshing
+      // the browser.
+      if (
+        !("android" in window) &&
+        !("webkit" in window) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.documentElement.style.backgroundColor = "black";
+        document.documentElement.style.color = "grey";
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
